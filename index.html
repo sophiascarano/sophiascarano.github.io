@@ -19,13 +19,14 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+                <span class="d-block d-lg-none">Sophia Scarano</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/profile_pic.jpg" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
@@ -40,19 +41,83 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        Clarence
-                        <span class="text-primary">Taylor</span>
+                        Sophia
+                        <span class="text-primary">Scarano</span>
                     </h1>
                     <div class="subheading mb-5">
-                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                        <a href="mailto:name@email.com">name@email.com</a>
+                        Alexandria, VA 22305 ·
+                        <a href="mailto:scaranosophia@gmail.com">scaranosophia@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                    <p class="lead mb-5">I am a Data Scientist experienced in Python and SQL, specifically with Computer Vision neural networks for custom multi-class classification systems. By implementing model interpretability in my data science workflow, I ensure my models’ performance complies with user-acceptance and explainability targets, and effectively communicate technical findings to both general and business-oriented audiences.</p>
                     <div class="social-icons">
-                        <a class="social-icon" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/sophia-scarano/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/sophiascarano"target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" href="https://twitter.com/ScaranoSophia"target="_blank"><i class="fab fa-twitter"></i></a>
+
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+             <!-- Projects -->
+             <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Energy Deposition Image Classification (ongoing)</h3>
+                            <br>
+                            <img class="img-resposive" src="images/tpc_data.jpg" width=468 align="right"/>
+                            <p>The goal of this project is to perform multi class object detection, comparing the difference between using a standard convolutional neural 
+                                net and using the more novel <a href="https://en.wikipedia.org/wiki/Capsule_neural_network"target="_blank">capsule network</a> approach for 
+                                this task. Additionally, I would like this project to eventually be one where I can test different model interpretability algorithms such as 
+                                <a href="https://github.com/marcotcr/lime"target="_blank">LIME</a>, <a href="https://github.com/slundberg/shap"target="_blank">SHAP</a>, 
+                                and <a href="https://github.com/marcoancona/DASP"target="_blank">DASP</a>, all state-of-the-art methods. 
+                                I am also interested in seeing how a <a href="https://en.wikipedia.org/wiki/Saliency_map"target="_blank">Saliency Map</a> might be beneficial in visualizing 
+                                these model interpretations. <br>
+                                
+                                This project is currently ongoing, and right now I am working on training a custom <a href="https://arxiv.org/abs/2004.10934"target="_blank">YOLOv4</a> object detector using Alexey 
+                                Bochkovskiy's Darknet framework. I will be using the YOLOv4 model as my convolutional neural net framework because of it’s generalization 
+                                capabilities which are useful for custom multi-class detection, and its real-time processing benefits which are useful in a scenario where the 
+                                incoming TPC data must be processed and classified quickly. <br>
+                                
+                                Additionally, I plan to test both the <a href="https://darkostern.github.io/files/Matwo_CapsNet.pdf"target="_blank">Matwo-CapsNet</a> method and the 
+                                <a href="https://github.com/XifengGuo/CapsNet-Keras/tree/tf2.2"target="_blank">CapsNet-Keras</a>
+                                method for this dataset. Of course, I wish to see if either outperforms the YOLOv4 convolutional neural net. However what I am most interested 
+                                in seeing is if the ‘capsule’ aspect of the network can allow for a further interpretation and classification of the decays happening within the chamber itself.  <br>
+                                
+                                </p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Handwritten Equations to LaTeX</h3>
+                            <br>
+                            <img class="img-resposive" src="images/img_to_latex.jpg" width=468 align="right"/>
+                            <p>The end result of this project is an app that takes an image of a handwritten equation, and after prompting the user to follow certain instructions, generates the 
+                                associated <a href="https://www.latex-project.org"target="_blank">LaTeX</a> syntax for the handwritten equation. This project uses custom multi class classification using YOLOv4 in Google Colab. There are 74 classes, with 
+                                each one being a mathematical expression ('x', 'lim', '2', etc.) that are the most commonly found in handwritten Calculus limit equations. Unfortunately, the 74-class 
+                                custom object detector crashed after running for over 100 hours in <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjSm9aRlKvtAhXmSjABHcXSDGsQjBAwAXoECAQQAQ&url=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Ftensorflow%2Fexamples%2Fblob%2Fmaster%2Fcourses%2Fudacity_intro_to_tensorflow_for_deep_learning%2Fl01c01_introduction_to_colab_and_python.ipynb&usg=AOvVaw2pr-crqP30RHfDs7hjKNnc"target="_blank">Google CoLab</a>
+                                , so I am currently thinking of ways to resolve this issue. However, this project is 
+                                not my main goal at the moment so it may be a while until a fully functional app is released. <br>
+                                To learn more about this project, <a href="https://github.com/sophiascarano/Handwritten_Equations_to_LaTeX"target="_blank">click here.</a></p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">California COVID-19 and Wildfire Amenity Avoidance</h3>
+                            <br>
+                            <img class="img-resposive" src="images/updated_folium_demo.jpg" width=468 align="right"/>
+                            <p>
+                                It is critical to mitigate and tame the diffusion of COVID-19 among people. Increased Social distancing is associated with lower rates of COVID- 19. Providing a navigation tool that 
+                                will equip people with information in regards to the density of COVID cases, in their vicinity, can potentially decrease the general exposure to COVID-19. The goal of this project was 
+                                to create an application that serves two purposes: help user to avoid ongoing wild-fires within California and help them to avoid COVID-19 hotspots. 
+                                The application additionally displays all locations of a specific type of amenity that the user inputs, such as gas stations, along with the associated ‘risk level’ for each, 
+                                with risk level being calculated based on that amenity’s proximity to both COVID-19 hotspots and any wildfire occurrences in the area. Shown to the right is a screenshot of the 
+                                map after a user inputs the desired amenity as ‘gas station’, with the blue circles representing COVID-19 hotspots with radii based on the infected population at each different 
+                                location, and the orange circles representing current wildfires. <br> 
+
+                                To learn more about this project, <a href="https://github.com/sophiascarano/COVID-19_wildfire_CA_amenity_avoidance_app">click here.</a></p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -63,36 +128,26 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                            <h3 class="mb-0">Data Science Fellow</h3>
+                            <div class="subheading mb-3">General Assembly</div>
+                            <p>480-hour immersive program applying data collection and cleaning, analysis, modeling, data visualization, 
+                                and machine/deep learning techniques to solve real-world data problems. <br>
+                                Used computer vision and compared performances of YOLO and GoogLe Net convolutional neural networks to 
+                                analyze and classify over 10,000 images with multi-class classification for 74 different classes. <br>
+                                Completed client project forecasting the risk of California amenity locations based on proximity to 
+                                COVID-19 hotspots and ongoing wildfires using time series analysis and Support Vector Machine learning. <br>
+                                Used Natural Language Processing to analyze and classify over 30,000 Reddit posts
+                                </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2020 - November 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">Undergraduate Research Assistant</h3>
+                            <div class="subheading mb-3">Joint Quantum Institute</div>
+                            <p>Designed and built a thermistor-based analog interlock system to control operational power and input signal to RF amplifiers. Designed and built RF amplifier cooling system and corresponding PCB for temperature sensing using Autodesk EAGLE for PCB design, OnShape for water cooling system, and Protocase Designer for rackmount box.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2017 - May 2020</span></div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -102,21 +157,30 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
+                            <h3 class="mb-0">University of Maryland</h3>
                             <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
+                            <div>Physics</div>
+                            <p>GPA: 3.65</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2017 - December 2019</span></div>
+                    </div>
+                    <!-- <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Lafayette College</h3>
+                            <div class="subheading mb-3">Bachelor of Science (Track)</div>
+                            <div>Physics</div>
+                            <p>GPA: 3.43</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2015 - December 2016</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
+                            <h3 class="mb-0">Rockville High School</h3>
+                            <div class="subheading mb-3"></div>
+                            <p>GPA: 3.98</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2011 - May 2015</span></div>
+                    </div> -->
                 </div>
             </section>
             <hr class="m-0" />
@@ -124,38 +188,99 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                    
+                    <div class="subheading2 mb-3">Programming Languages & Libraries</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Python
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Tensorflow / Keras 
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            PyTorch 
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Sci-Kit Learn
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Numpy
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Pandas
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            SQL
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            HTML
+                        </li>
+            
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    <br>
+                    <div class="subheading2 mb-3">Data Science & Machine Learning Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Data Collection and Cleaning
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Computer Vision
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Neural Networks
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Natual Language Processing
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Tableau
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Data Visualization
+                        </li>
+            
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Webscraping
+                        </li>
+                    </ul>
+                    <br>
+                    
+                    <div class="subheading2 mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            Identify business context for AI, and factor in cost of explainability
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            Incorporate user's explanability objectives into MVP and acceptance criteria
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            Ensure predictions are applied to the problem they were intended to solve
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            Monitor for fairness, prediction biases and drift
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Perform prediction diagnosis, root cause analysis and provide prediciton support
                         </li>
                     </ul>
                 </div>
@@ -165,53 +290,30 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>Apart from being a data scientist, I enjoy time spent painting and creating music with my expressive MIDI controller, the <a href="https://www.rogerlinndesign.com/linnstrument"target="_blank">Linnstrument</a>. I also enjoy my free time spent indoors reading about the various technological advancements in machine learning, particularly those related to model interpretability and computer vision.</p>
+                    <p class="mb-0">When the whether is nice, I try to get outdoors as much as I can, whether it’s to go on a long run along the Potomac river, or to go hiking at Great Falls National Park. In the winter months I am an enthusiastic skier, and as much as I love east coast skiing, I try to get out west as much as I can!</p>
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Awards-->
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <h2 class="mb-5">Awards, Certifications & Publications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
+                            General Assembly Certified Data Scientist
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
+                        
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
                             1
                             <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                            Place - American Physical Society - Outstanding <a href="https://www.linkedin.com/in/sophia-scarano/detail/treasury/position:1434088612/?entityUrn=urn%3Ali%3Afsd_profileTreasuryMedia%3A(ACoAACsE0FoByVIsn8Qi7RVC3Bf9ZXsztrPg3ms%2C1585859410604)&section=position%3A1434088612&treasuryCount=1"target="_blank">Presentation</a> Award March Meeting 2019
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
+                            Publication - High Purity Single Photons Entangled with an Atomic Memory  (<a href="https://arxiv.org/abs/1812.01749"target="_blank">arXiv:1812.01749</a>)
                         </li>
                     </ul>
                 </div>
