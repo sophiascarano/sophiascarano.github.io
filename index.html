@@ -45,10 +45,17 @@
                         <span class="text-primary">Scarano</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Alexandria, VA 22305 ·
+                        Olney, MD 20832 ·
                         <a href="mailto:scaranosophia@gmail.com">scaranosophia@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">I am a Data Scientist experienced in Python and SQL, specifically with Computer Vision neural networks for custom multi-class classification systems. By implementing model interpretability in my data science workflow, I ensure my models’ performance complies with user-acceptance and explainability targets, and effectively communicate technical findings to both general and business-oriented audiences.</p>
+                    
+                    <p class="lead mb-5"> 
+                        Burgeoning data science and research engineering professional bringing solid Python, SQL, computer vision, 
+                        and neural network experience with a special interest in hybrid quantum-classical networks. 
+                        Detailed in aligning model and data science workflow with user-acceptance and explainability targets. Clear and concise 
+                        in communicating findings to technical, general, and business audiences alike. Collaborative in predicting 
+                        application issues and failures.
+                    </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/sophia-scarano/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/sophiascarano"target="_blank"><i class="fab fa-github"></i></a>
@@ -62,6 +69,25 @@
              <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Hybrid Quantum-Classical Biomedical Image Segmentation Network (ongoing)</h3>
+                            <br>
+                            <img class="img-resposive" src="images/brain_tumor.jpg" width=468 align="right"/>
+                            <p>Medical image segmentation has an essential role in computer-aided diagnosis systems for many different 
+                                applications. Here, we look at the application of image segmentation on <a href="https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection"target="_blank">brain MRI images</a>
+                                for brain tumor detection, using the <a href="https://arxiv.org/abs/2006.04878"target="_blank">KiU-Net</a>
+                                architectural framework. In this case, 
+                                KIU-Net is preferable over the industry standard U-Net because of its over-complete representation 
+                                methods for more accurate biomedical image segmentation of small and detailed objects such as brain tumors. 
+                                Additionally, the implementation of <a href="https://arxiv.org/abs/1911.02998"target="_blank">Hybrid Quantum-Classical</a> Convolutional Neural Networks
+                                is embedded into the feature map creation step in each CNN layer within the KiU-Net framework. Because 
+                                quantum computing has demonstrated to be able to output complex wave functions with a few number of 
+                                gate operations, the adaptation of quantum simulations for matrix operations has been adapted to 
+                                enhance the feature mapping process, which is the most computationally intensive part of CNNs.
+                                </p>
+                        </div>
+                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Energy Deposition Image Classification (ongoing)</h3>
@@ -93,13 +119,25 @@
                             <h3 class="mb-0">Handwritten Equations to LaTeX</h3>
                             <br>
                             <img class="img-resposive" src="images/img_to_latex.jpg" width=468 align="right"/>
-                            <p>The end result of this project is an app that takes an image of a handwritten equation, and after prompting the user to follow certain instructions, generates the 
-                                associated <a href="https://www.latex-project.org"target="_blank">LaTeX</a> syntax for the handwritten equation. This project uses custom multi class classification using YOLOv4 in Google Colab. There are 74 classes, with 
-                                each one being a mathematical expression ('x', 'lim', '2', etc.) that are the most commonly found in handwritten Calculus limit equations. Unfortunately, the 74-class 
-                                custom object detector crashed after running for over 100 hours in <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjSm9aRlKvtAhXmSjABHcXSDGsQjBAwAXoECAQQAQ&url=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Ftensorflow%2Fexamples%2Fblob%2Fmaster%2Fcourses%2Fudacity_intro_to_tensorflow_for_deep_learning%2Fl01c01_introduction_to_colab_and_python.ipynb&usg=AOvVaw2pr-crqP30RHfDs7hjKNnc"target="_blank">Google CoLab</a>
-                                , so I am currently thinking of ways to resolve this issue. However, this project is 
+                            <p>
+                               The end result of this project is an app that takes an image of a handwritten equation, 
+                               and after prompting the user to follow certain instructions, generates the 
+                                associated <a href="https://www.latex-project.org"target="_blank">LaTeX</a> syntax for the 
+                                handwritten equation. Used computer vision (CV) and compared “You only look once” (YOLO) and 
+                                GoogLeNet real-time,
+                                object detection and classification performance for image classification. 
+                                All code was executed using <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjSm9aRlKvtAhXmSjABHcXSDGsQjBAwAXoECAQQAQ&url=https%3A%2F%2Fcolab.research.google.com%2Fgithub%2Ftensorflow%2Fexamples%2Fblob%2Fmaster%2Fcourses%2Fudacity_intro_to_tensorflow_for_deep_learning%2Fl01c01_introduction_to_colab_and_python.ipynb&usg=AOvVaw2pr-crqP30RHfDs7hjKNnc"target="_blank">Google CoLab</a>.
+                                For training, I identified 10,000 calculus equations and trained 
+                                CNN enabling custom object detection and multilabel classifications for 74 different classes.
+                                Each class is a mathematical expression ('x', 'lim', '2', etc.) that are the most commonly 
+                                found in handwritten Calculus limit equations. Unfortunately, the 74-class 
+                                custom object detector crashed after running for over 100 hours in CoLab, 
+                                so I am currently thinking of ways to resolve this issue. However, this project is 
                                 not my main goal at the moment so it may be a while until a fully functional app is released. <br>
-                                To learn more about this project, <a href="https://github.com/sophiascarano/Handwritten_Equations_to_LaTeX"target="_blank">click here.</a></p>
+                                To learn more about this project, <a href="https://github.com/sophiascarano/Handwritten_Equations_to_LaTeX"target="_blank">click here.</a>
+                
+                            </p>
+                            
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -108,13 +146,11 @@
                             <br>
                             <img class="img-resposive" src="images/updated_folium_demo.jpg" width=468 align="right"/>
                             <p>
-                                It is critical to mitigate and tame the diffusion of COVID-19 among people. Increased Social distancing is associated with lower rates of COVID- 19. Providing a navigation tool that 
-                                will equip people with information in regards to the density of COVID cases, in their vicinity, can potentially decrease the general exposure to COVID-19. The goal of this project was 
-                                to create an application that serves two purposes: help user to avoid ongoing wild-fires within California and help them to avoid COVID-19 hotspots. 
-                                The application additionally displays all locations of a specific type of amenity that the user inputs, such as gas stations, along with the associated ‘risk level’ for each, 
-                                with risk level being calculated based on that amenity’s proximity to both COVID-19 hotspots and any wildfire occurrences in the area. Shown to the right is a screenshot of the 
-                                map after a user inputs the desired amenity as ‘gas station’, with the blue circles representing COVID-19 hotspots with radii based on the infected population at each different 
-                                location, and the orange circles representing current wildfires. <br> 
+                                The end result of this project is an app that helps users avoid COVID-19 hotspots and dangerous ongoing wildfire
+                                locations in California. This app allows users to input their current location, desired location, and amenity they 
+                                are interested in visiting en route. Based on an additional input of the distance they are willing to deviate 
+                                from their route, this application displays all location of their desired amenity in that area, along with each 
+                                location's assiciated "risk level" for both COVID-19 and wildfire proximity.
 
                                 To learn more about this project, <a href="https://github.com/sophiascarano/COVID-19_wildfire_CA_amenity_avoidance_app">click here.</a></p>
                         </div>
@@ -128,27 +164,69 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Data Science Fellow</h3>
-                            <div class="subheading mb-3">General Assembly</div>
-                            <p>480-hour immersive program applying data collection and cleaning, analysis, modeling, data visualization, 
-                                and machine/deep learning techniques to solve real-world data problems. <br>
-                                Used computer vision and compared performances of YOLO and GoogLe Net convolutional neural networks to 
-                                analyze and classify over 10,000 images with multi-class classification for 74 different classes. <br>
-                                Completed client project forecasting the risk of California amenity locations based on proximity to 
-                                COVID-19 hotspots and ongoing wildfires using time series analysis and Support Vector Machine learning. <br>
-                                Used Natural Language Processing to analyze and classify over 30,000 Reddit posts
-                                </p>
+                            <h3 class="mb-0">General Assembly</h3>
+                            <div class="subheading mb-3">Data Science Fellow</div>
+                            <p>
+                                <i>480-hour immersive program applying data collection and cleaning, analysis, modeling, data 
+                                visualization, and machine and deep learning techniques to solve real-world data problems. </i>
+                            </p>
+                            <p>
+                                Completed challenging application process and earned admission to exclusive, rigorous, 
+                                world-class data science immersive program. Applied linear algebra, statistics, and complex 
+                                mathematics concepts to client and commercially viable applications addressing current issues 
+                                using real-world data. Used image and natural language processing, deep learning techniques, and 
+                                multiple programming languages in developing functional solutions. Projects completed autonomously 
+                                and in collaborative, cloud-based environment.
+                            </p>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                                <b>Created teaching application </b>converting handwritten mathematical equations into LaTeX syntax for 
+                                improved readability as course capstone project. Identified 10,000 calculus equations and trained 
+                                CNN enabling custom object detection and multilabel classifications for 74 different classes. 
+                                (Recovered from last minute data resource failure, locate secondary, and completed CNN training 
+                                and project in only 4 days.)
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                                <b>Led group dual-purpose, map application project.</b> Harvested historical and current data from 
+                                multiple public databases and identified safe amenities and routes during California wildfires, 
+                                and pinpointed COVID-19 hotspots. Trained 2 deep neural networks to 92% classification accuracy; 
+                                boosted project productivity. (Monetization planned.)
+                            </li>
+                            <li>
+                                <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                                <b>Classified Martian craters and regions</b> using visual data from Mars missions and used natural 
+                                language processing in analyzing and classifying 30,000+ Reddit posts as part of multiple 
+                                hackathons used in developing foundational data science skills and expertise. 
+                            </li>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2020 - November 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Undergraduate Research Assistant</h3>
-                            <div class="subheading mb-3">Joint Quantum Institute</div>
-                            <p>Designed and built a thermistor-based analog interlock system to control operational power and input signal to RF amplifiers. Designed and built RF amplifier cooling system and corresponding PCB for temperature sensing using Autodesk EAGLE for PCB design, OnShape for water cooling system, and Protocase Designer for rackmount box.</p>
+                            <h3 class="mb-0">Joint Quantum Institute</h3>
+                            <div class="subheading mb-3">Undergraduate Research Assistant</div>
+                            <p>Led small team and completed autonomous projects. Designed and built thermistor-based analog 
+                                interlock system and system components used in controlling operational power and input signals 
+                                to RF amplifiers, including automated cooling system for lasers. Work suspended due to COVID-19, 
+                                but sparked interest in AI, CNN, and visual learning.
+                            </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2017 - May 2020</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2017 - March 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Maryland Nanocenter</h3>
+                            <div class="subheading mb-3">Undergraduate Research Assistant</div>
+                            <p>Spent 6 months contributing to ongoing Ultrafast Optical Science project. Performed data analysis; graphed and
+                                 delivered clean, accurate results (working in MATLAB). Applied rigorous mathematical training and complex
+                                  mathematical concepts in building solid research and data science application foundation.
+                                </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2017 - June 2017</span></div>
+                    </div>
                 </div>
+                
             </section>
             <hr class="m-0" />
             <!-- Education-->
@@ -197,6 +275,14 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Qiskit
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            SQL, MySQL, & R
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
                             Tensorflow / Keras 
                         </li>
                         <li>
@@ -205,24 +291,21 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Sci-Kit Learn
+                            Numpy, Pandas, & Sci-Kit Learn
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Numpy
+                            LaTeX and HTML
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Pandas
+                            MATLAB
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            SQL
+                            Basic SPARK
                         </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            HTML
-                        </li>
+                        
             
                     </ul>
                     <br>
@@ -230,36 +313,75 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Data Collection and Cleaning
+                            Computer Vision AI (CNN)
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Computer Vision
+                            Hybrid Quantum-Classical Models
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Neural Networks
+                            Natural Language Processing (NLP)
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Natual Language Processing
+                            Model Interpretability (LIME, SHAP)
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Tableau
+                            Data Collection & Cleaning
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
-                            Data Visualization
+                            Tableau & Data Visualization
                         </li>
-            
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Time Series Analysis
+                        </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
                             Webscraping
                         </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Basic API Development (Flask)
+                        </li>
                     </ul>
                     <br>
-                    
+                    <div class="subheading2 mb-3">Technical & Mathematical Skills</div>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Vector Calculus
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Fourier Analysis
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Hamiltonian & Lagrangian Formalism
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Statistical Ensembles & Time Evolution (Liouville & Poincaré Theorems)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Tensor Representations & Operations
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Quantum Dynamics (QFT, QED, QCD)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>
+                            Trapped Ion Quantum Information (using Ba+ and Yb+ ions)
+                        </li>
+                       
+                    </ul>
+                    <br>
                     <div class="subheading2 mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
                         <li>
@@ -291,7 +413,7 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
                     <p>Apart from being a data scientist, I enjoy time spent painting and creating music with my expressive MIDI controller, the <a href="https://www.rogerlinndesign.com/linnstrument"target="_blank">Linnstrument</a>. I also enjoy my free time spent indoors reading about the various technological advancements in machine learning, particularly those related to model interpretability and computer vision.</p>
-                    <p class="mb-0">When the whether is nice, I try to get outdoors as much as I can, whether it’s to go on a long run along the Potomac river, or to go hiking at Great Falls National Park. In the winter months I am an enthusiastic skier, and as much as I love east coast skiing, I try to get out west as much as I can!</p>
+                    <p class="mb-0">When the weather is nice, I try to get outdoors as much as I can, whether it’s to go on a long run along the Potomac river, or to go hiking at Great Falls National Park. In the winter months I am an enthusiastic skier, and as much as I love east coast skiing, I try to get out west as much as I can!</p>
                 </div>
             </section>
             <hr class="m-0" />
@@ -301,8 +423,20 @@
                     <h2 class="mb-5">Awards, Certifications & Publications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            General Assembly Certified Data Scientist
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            DeepLearning.AI TensorFlow: Advanced Techniques Specialization Professional Certificate program 2021
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            DeepLearning.AI TensorFlow Developer Professional Certificate program 2021
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            AWS Certification 2021 (expected 2021)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            General Assembly Certified Data Scientist 2020
                         </li>
                         
                         <li>
